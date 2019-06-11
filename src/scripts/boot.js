@@ -111,7 +111,7 @@ export const startApp = async (
     store.commit(`setRpcUrl`, urlParams.rpc)
   }
   if (urlParams.insecure) {
-    store.commit(`setInsecureMode`)
+    //store.commit(`setInsecureMode`)
   }
 
   store.dispatch(`showInitialScreen`)

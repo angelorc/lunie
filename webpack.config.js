@@ -214,14 +214,9 @@ if (process.env.NODE_ENV === `production`) {
           `https://sentry.io`,
           `https://appzi-collector-b.azurewebsites.net`,
           `https://keybase.io`,
-          // mainnet
-          `https://stargate.lunie.io`,
-          `wss://rpc.lunie.io:26657`,
-          `https://stargate.cosmos.network`,
-          `wss://rpc.cosmos.network:26657`,
           // testnet
-          `https://sntajlxzsg.execute-api.eu-central-1.amazonaws.com/`,
-          `wss://test.voyager.ninja:26657`
+          `http://stargate.testnet-tichex.bas.network/`,
+          `ws://159.69.82.36:26657`
         ],
         "frame-src": [`'self'`, `https://app.appzi.io/`],
         "img-src": [

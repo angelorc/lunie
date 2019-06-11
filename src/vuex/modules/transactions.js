@@ -106,7 +106,7 @@ export default ({ node }) => {
       type
     ) {
       let response
-      const validatorAddress = address.replace(`cosmos`, `cosmosvaloper`)
+      const validatorAddress = address.replace(`tichex`, `tichexvaloper`)
       switch (type) {
         case TypeBank:
           response = await node.get.bankTxs(address)
