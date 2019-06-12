@@ -210,20 +210,12 @@ if (process.env.NODE_ENV === `production`) {
         // 'style-src': production ? `'self'` : `*`, // SECURITY Appzi is applying styles inline, inquired to them already
         "style-src": [`'self'`, `'unsafe-inline'`],
         "connect-src": [
-          `http://wallet.testnet-tichex.bas.network:26657`,
-          `http://wallet.testnet-tichex.bas.network`,
           // third party tools
-          //`https://sentry.io`,
-          //`https://appzi-collector-b.azurewebsites.net`,
-          //`https://keybase.io`,
-          // mainnet
-          //`https://stargate.lunie.io`,
-          //`wss://rpc.lunie.io:26657`,
-          //`https://stargate.cosmos.network`,
-          //`wss://rpc.cosmos.network:26657`,
+          `https://sentry.io`,
+          `https://keybase.io`,
           // testnet
-          //`https://sntajlxzsg.execute-api.eu-central-1.amazonaws.com/`,
-          //`wss://test.voyager.ninja:26657`
+          `http://stargate.testnet-tichex.bas.network/`,
+          `ws://159.69.82.36:26657`
         ],
         //"frame-src": [`'self'`, `https://app.appzi.io/`],
         "img-src": [
