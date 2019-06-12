@@ -390,13 +390,6 @@
             does not identify individual services.</span
           >
         </li>
-        <li class="c13">
-          <span class="c0"
-            >Cookies tied to sentry.io, Appzi and similar services that provide
-            information and analytics on the the App&rsquo;s performance and
-            user experience.</span
-          >
-        </li>
       </ul>
       <p><span class="c5">Controlling Cookies</span></p>
       <p>
