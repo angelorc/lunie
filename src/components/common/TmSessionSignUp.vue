@@ -131,25 +131,6 @@
             type="required"
           />
         </TmFormGroup>
-        <TmFormGroup
-          :error="$v.fields.errorCollection.$error"
-          field-id="error-collection"
-          field-label
-        >
-          <div class="tm-field-checkbox">
-            <div class="tm-field-checkbox-input">
-              <input
-                id="error-collection"
-                v-model="fields.errorCollection"
-                type="checkbox"
-              />
-            </div>
-            <label class="tm-field-checkbox-label" for="error-collection">
-              I'd like to opt in for remote error tracking to help improve
-              Voyager.
-            </label>
-          </div>
-        </TmFormGroup>
       </div>
       <div class="tm-session-footer">
         <TmBtn value="Next" size="lg" />
