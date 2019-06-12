@@ -148,7 +148,7 @@ export default () => {
     // TODO split into sign in with ledger and signin with local key
     async signIn(
       { state, commit, dispatch },
-      { localKeyPairName, address, sessionType = `ledger` }
+      { localKeyPairName, address, sessionType }
     ) {
       let accountAddress
       switch (sessionType) {
