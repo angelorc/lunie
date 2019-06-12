@@ -14,7 +14,7 @@ describe(`Bech32`, () => {
   beforeEach(() => {
     wrapper = shallowMount(Bech32, {
       localVue,
-      propsData: { address: `cosmosftw123456789` },
+      propsData: { address: `tichexftw123456789` },
       data: () => ({
         copySuccess: false
       })
@@ -36,18 +36,18 @@ describe(`Bech32`, () => {
   })
 
   it(`should return a validation error message`, () => {
-    wrapper.setProps({ address: `cosmosaddress2asdfasdfasdf` })
+    wrapper.setProps({ address: `tichexaddress2asdfasdfasdf` })
     expect(wrapper.find(".address").text()).toBe(`Not A Valid Bech32 Address`)
   })
 
   it(`should return a short address with everything before the 1`, () => {
-    wrapper.setProps({ address: `cosmosaddress1asdfasdfasdf` })
-    expect(wrapper.find(".address").text()).toBe(`cosmosaddress…asdf`)
+    wrapper.setProps({ address: `tichexaddress1asdfasdfasdf` })
+    expect(wrapper.find(".address").text()).toBe(`tichexaddress…asdf`)
   })
 
   it(`should return a long address when long-form set`, () => {
-    wrapper.setProps({ address: `cosmosaddress1asdfasdfasdf`, longForm: true })
-    expect(wrapper.find(".address").text()).toBe(`cosmosaddress1asdfasdfasdf`)
+    wrapper.setProps({ address: `tichexaddress1asdfasdfasdf`, longForm: true })
+    expect(wrapper.find(".address").text()).toBe(`tichexaddress1asdfasdfasdf`)
   })
 
   describe(`onCopy`, () => {

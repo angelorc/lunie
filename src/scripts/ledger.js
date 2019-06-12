@@ -13,7 +13,7 @@ HD wallet derivation path (BIP44)
 DerivationPath{44, 118, account, 0, index}
 */
 const HDPATH = [44, 118, 0, 0, 0]
-const BECH32PREFIX = `cosmos`
+const BECH32PREFIX = `tichex`
 
 export default class Ledger {
   constructor({ testModeAllowed }) {
